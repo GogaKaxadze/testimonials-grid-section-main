@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+ width: 100vw;
+ min-height: 100vh;
+ background-color: #ecf2f8;
+ display: flex;
+ padding: 71px 24px;
+ overflow-x: hidden;
+}
+.main{
+ display: grid;
+ grid-template-columns: auto;
+ row-gap: 24px;
+ column-gap: 30px;
+}
+.card{
+ padding: 26px 32px 32px 32px;
+ box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+ border-radius: 8px;
+}
+.violet{
+ background: #733FC8;
+ background-image:url(/image/“.png) ;
+ background-position: top 0 right 24px;
+ background-repeat: no-repeat;
+}
+.author{
+ display: flex;
+ align-items: center;
+ column-gap: 17px;
+}
+.author-img{
+ width: 28px;
+ height: 28px;
+}
+.author-name{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 13px;
+ line-height: 13px;
+ color: #FFFFFF;
+}
+.author-describe{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 11px;
+ line-height: 11px;
+ color: #FFFFFF;
+ mix-blend-mode: normal;
+ opacity: 0.5;
+}
+.author-item{
+ margin-left: 17px;
+}
+.card-items{
+ margin-top: 18px;
+}
+.info{
+ font-style: normal;
+ font-weight: 600;
+ font-size: 20px;
+ line-height: 24px;
+ color: #FFFFFF;
+ margin-top: 18px;
+}
+.describe{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 13px;
+ line-height: 18px;
+ color: #CFCFCF;
+ mix-blend-mode: normal;
+ opacity: 0.7;
+ margin-top: 40px;
+}
+/**gray**/
+.gray{
+ background: #48556A;
+}
+/**jeanette-white**/
+.jeanette-white{
+ background-color: #fff;
+}
+.dark{
+ color: #48556A;
+
+}
+.dark2{
+ color: #48556A;
+ mix-blend-mode: normal;
+ opacity: 0.7;
+}
+/**black**/
+.black{
+ background: #19202D;
+}
+/**kira-white**/
+.kira-white{
+ background: #FFFFFF;
+}
+
+
+@media (min-width:1440px){
+ body{
+  padding: 164px;
+ }
+ .main{
+  grid-template-columns: repeat(4, 255px);
+ }
+ .violet{
+   background-position: top 0 right 80px;
+   grid-column: 1/3;
+ }
+ .black{
+  grid-column: 2/4;
+ }
+ .kira-white{
+  grid-row: 1/3;
+  grid-column: 4/4;
+ }
+}
